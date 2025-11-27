@@ -14,14 +14,21 @@
 <body>
 
     <a href="frontpage.html" class="prevbtn">Back</a>
-
-    <div class="head-container">
-        <h1 class="h1">Cinko</h1>
-        <h2 class="h2"> Kusina</h2>
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top navbar-scrolled">
+                <div class="head-container">
+                <h1 class="h1">Cinko</h1>
+                <h2 class ="h2"> Kusina</h2>
+                
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+</ul>
     </div>
+    </nav>
 
-    <h3 class="text-center">RESERVATION</h3>
-
+   
+    
     <form class="reservation-form" style="max-width: 700px; margin: auto;">
 
         <table class="reservation" cellpadding="10" cellspacing="9" style="width:100%;">
@@ -91,5 +98,15 @@
     </form>
 
 </body>
+<script>
+                const navbar = document.querySelector(".navbar");
+              window.addEventListener("scroll", ()=>{
+ if (window.scrollY >= 50) {
+      navbar.classList.add("navbar-scrolled");
+  } else if (window.scrollY < 50){
+      navbar.classList.remove("navbar-scrolled");
+  }
+});
+</script>
 
 </html>
