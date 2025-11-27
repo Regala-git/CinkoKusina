@@ -1,49 +1,71 @@
 <!DOCTYPE html>
 <html>
-    
-        <head> 
-             <meta charset="UTF-8">
-             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-             <title> Cinko Kusina Page </title>
-               <link rel="stylesheet" href="design_reservation.css">
-            
-        </head>
-       
-            <body style ="background-image: url('bg.png'); 
-            background-size:cover; 
-            background-repeat: no-repeat;
-            background-position: center;
-            
-            ">  
-            <div class="head-container">
-                <h1 class="h1-inline">Cinko</h1>
-                <h2 class ="h2-inline"> Kusina</h2>
-                </div>
-                <h3>RESERVATION</h3>
 
-                <form class="reservation-form">
-               <table class="reservation" cellpadding ="10" cellspacing ="9">
-                <tr>
-                    <td> Name: </td>
-                    <td> <input type ="name"></td>
-                </tr>
-                <tr>
-                    <td>Email:</td>
-                    <td><input type="email"></td>
-                </tr>
-                <tr>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinko Kusina Page</title>
+
+    <link rel="stylesheet" href="design_reservation.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body style="background-image: url('bg.png');
+             background-size: cover;
+             background-repeat: no-repeat;
+             background-position: center;">
+
+    <div class="head-container">
+        <h1 class="h1-inline">Cinko</h1>
+        <h2 class="h2-inline"> Kusina</h2>
+    </div>
+
+    <h3 class="text-center mt-3">RESERVATION</h3>
+
+    <form class="reservation-form" style="max-width: 700px; margin: auto;">
+
+        <table class="reservation" cellpadding="10" cellspacing="9" style="width:100%;">
+
+       
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingName" placeholder="Your Name">
+                        <label for="floatingName">Name</label>
+                    </div>
+                </td>
+            </tr>
+
+    
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                        <label for="floatingEmail">email@gmail.com</label>
+                    </div>
+                </td>
+            </tr>
+
+         
+            <tr>
                 <td>Time:</td>
                 <td>
-                   <select name="time">
-                       <option value="">-- Select Time --</option>
+                    <select name="time" class="form-select">
+                        <option value="">-- Select Time --</option>
                         <option>10:00 AM</option>
                         <option>11:00 AM</option>
                         <option>12:00 PM</option>
                         <option>2:30 PM</option>
                         <option>4:00 PM</option>
                         <option>5:30 PM</option>
-                      </select>
+                    </select>
                 </td>
+<<<<<<< Updated upstream
                 </tr>
                 <tr>
                     <td>Date: </td>
@@ -68,9 +90,41 @@
                </table>
                <button class="reservebtn" type="submit" >RESERVE</button> 
                <a href="frontpage.html" class="prevbtn">Back</a>
+=======
+            </tr>
 
-              
-            </form>
-            </body>
-      
+            <tr>
+                <td>Date:</td>
+                <td><input type="date" class="form-control"></td>
+            </tr>
+
+         
+            <tr>
+                <td>Number of Customers:</td>
+                <td>
+                    <select name="customers" class="form-select">
+                        <option value="">--Quantity--</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                    </select>
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="text-center mt-3">
+            <button class="reservebtn btn btn-primary" type="submit">RESERVE</button>
+            <button class="prevbtn btn btn-secondary" type="button" onclick="history.back()">Back</button>
+        </div>
+
+    </form>
+
+</body>
+>>>>>>> Stashed changes
+
 </html>
